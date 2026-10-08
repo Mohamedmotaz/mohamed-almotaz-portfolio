@@ -61,9 +61,12 @@ Personal identity uses the accepted navy and blue MA wordmark and a matching tab
 
 The bilingual home includes a personal introduction, selected work, background, working approach, a separate nursing experience section, two original-layout CVs and contact links. The accepted personal identity is used in the header and favicon. Original screenshots are displayed in CSS device/browser frames; presentation viewports exclude status/gesture bars and scrollbars without altering the original media. The cut-off Shift Planner picker was replaced with a complete source capture. MTI Health uses an isolated identity symbol and a clean viewport of the original module screen.
 
+Arabic pages use locally hosted IBM Plex Sans Arabic with its font license. Nursing copy is concise; internship wording is omitted following the owner’s correction. Shift Planner separates Android media, the introductory review website design and the established web app at https://shift-planner-kh.pages.dev/.
+
 ## Repository hosting
 
 The root `index.html` forwards the previous GitHub Pages address to the current Cloudflare portfolio. The full generated site, including Arabic and project paths, is preserved in `portfolio-production.zip`. Source assets and build files are stored at the repository root. The previous main version is retained in `backup/portfolio-before-2026-10-08`.
 
-Shift Planner website: https://shift-planner-test.pages.dev/  
+Shift Planner web app: https://shift-planner-kh.pages.dev/  
+Introductory web design: https://shift-planner-test.pages.dev/  
 GULFRN website: https://gulfrn.pages.dev/

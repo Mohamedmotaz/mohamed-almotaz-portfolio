@@ -4,7 +4,7 @@ window.PROJECTS = [
     "category": "Digital products",
     "title": "Shift Planner",
     "subtitle": "A clearer view of the working month",
-    "description": "A personal Android project for people who work shifts. Calendar views and colour-coded shift types turn a busy roster into a readable daily plan.",
+    "description": "A personal Android project for people who work shifts. Calendar views and colour-coded shift types turn a busy roster into a readable daily plan. The Android interface and introductory web-page design are presented as separate parts of the project.",
     "role": "Product concept, interface design and product development",
     "images": [
       "shift-calendar-clean.png",
@@ -18,19 +18,26 @@ window.PROJECTS = [
     ],
     "links": [
       [
-        "View on Google Play",
-        "https://play.google.com/store/apps/details?id=com.shiftcalculator.pro"
+        "Android app on Google Play",
+        "https://play.google.com/store/apps/details?id=com.shiftcalculator.pro",
+        "تطبيق أندرويد على Google Play"
       ],
       [
-        "Visit Shift Planner website",
-        "https://shift-planner-test.pages.dev/"
+        "Open the established web app",
+        "https://shift-planner-kh.pages.dev/",
+        "افتح تطبيق الويب الأساسي"
+      ],
+      [
+        "Explore the introductory web design",
+        "https://shift-planner-test.pages.dev/",
+        "شاهد تصميم صفحة الويب التعريفية"
       ]
     ],
     "color": "#efedf9",
     "ar": {
       "title": "Shift Planner",
       "subtitle": "جدول الشيفتات بشكل أوضح",
-      "description": "مشروع تطبيق أندرويد شخصي لتنظيم الشيفتات، بواجهة تقويم وألوان تميّز أنواع الورديات وملخص للساعات والشيفتات.",
+      "description": "مشروع تطبيق أندرويد شخصي لتنظيم الشيفتات، بواجهة تقويم وألوان تميّز أنواع الورديات وملخص للساعات والشيفتات. واجهة أندرويد وتصميم صفحة الويب التعريفية معروضان كجزئين مستقلين من المشروع.",
       "role": "فكرة المنتج وتصميم الواجهة وتطوير المنتج",
       "points": [
         "تقويم وإضافة الشيفتات",
@@ -60,6 +67,13 @@ window.PROJECTS = [
         "arTitle": "الساعات والأوفر تايم",
         "caption": "A complete development capture showing the monthly hours summary and overtime calculation.",
         "arCaption": "لقطة كاملة من التطوير تعرض ملخص ساعات الشهر وحساب الأوفر تايم."
+      },
+      {
+        "image": "shift-web-home.png",
+        "title": "Web · Introductory page",
+        "arTitle": "الويب · الصفحة التعريفية",
+        "caption": "The introductory landing-page design, shown separately from the Android app. This sample comes from the review website; the established web app has its own link.",
+        "arCaption": "تصميم الصفحة التعريفية، معروض بشكل مستقل عن تطبيق أندرويد. اللقطة من موقع المراجعة، وتطبيق الويب الأساسي له رابط منفصل."
       }
     ],
     "format": "mobile",

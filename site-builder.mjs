@@ -14,7 +14,7 @@ const files=[...new Set(projects.flatMap(p=>[...p.images,p.cover,p.logo,...p.scr
 const media={};
 await sharp(path.join(root,'favicon.svg')).resize(180,180).png().toFile(path.join(out,'media','personal-icon.png'));
 for(const name of files){const file=name.replace(/\.(png|jpg|jpeg)$/i,'.webp');const result=await sharp(path.join(root,name)).resize({width:1600,withoutEnlargement:true}).webp({quality:86,effort:5}).toFile(path.join(out,'media',file));media[name]={file,width:result.width,height:result.height,bytes:result.size};}
-for(const name of ['style.css','favicon.svg','portfolio-sans.woff2','portfolio-sans-bold.woff2','FONT_LICENSE.txt','Mohamed_Almotaz_CV.pdf','Mohamed_Almotaz_Nursing_CV.pdf','Mohamed_Almotaz_Design_Tech_CV.pdf'])await fs.copyFile(path.join(root,name),path.join(out,name));
+for(const name of ['style.css','favicon.svg','portfolio-sans.woff2','portfolio-sans-bold.woff2','FONT_LICENSE.txt','IBMPlexSansArabic-Regular.woff2','IBMPlexSansArabic-Medium.woff2','IBMPlexSansArabic-SemiBold.woff2','IBM_PLEX_FONT_LICENSE.txt','Mohamed_Almotaz_CV.pdf','Mohamed_Almotaz_Nursing_CV.pdf','Mohamed_Almotaz_Design_Tech_CV.pdf'])await fs.copyFile(path.join(root,name),path.join(out,name));
 await fs.copyFile(path.join(root,'enhancements.js'),path.join(out,'app.js'));
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const routes=[];
