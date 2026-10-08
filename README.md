@@ -1,97 +1,69 @@
-# Mohamed Almotaz
+# Mohamed Almotaz - Portfolio
 
-Visual designer, registered nurse and digital maker based in Cairo, Egypt.
+A bilingual portfolio for visual design, digital products and educational course operations.
 
-I design visual identities, marketing materials and interfaces, and build personal web and app projects with AI-assisted development. My nursing background informs my healthcare and learning projects.
+**Live site:** https://mohamed-almotaz.pages.dev/  
+**Arabic:** https://mohamed-almotaz.pages.dev/ar/
 
-## Selected projects
+## Work represented
 
-### Shift Planner
+Twelve projects: Shift Planner, GULFRN, Motaz CV Builder, MSRA IV, PLABridge, property rental visuals, PinkCare, Acute GVHD Assessment, Al-Taqwa Institute, NursePath Germany, PflegeKompass and MTI Health.
 
-A personal Android project for people who work shifts. Calendar views and colour-coded shift types turn a busy roster into a readable daily plan.
+Each project explains the contribution and includes actual work samples. MSRA IV and PLABridge cover visual design, content administration, course operations and subscriber support. MSRA IV's current visit link is https://msraiv.com/home; earlier interface samples remain credited as earlier work. Al-Taqwa represents logo design. PflegeKompass is a local design prototype. Educational and clinical interface prototypes do not establish clinical validation or patient-care deployment.
 
-**My role:** Product concept, interface design and AI-assisted implementation.
+## Structure
 
-[View on Google Play](https://play.google.com/store/apps/details?id=com.shiftcalculator.pro)
+- `projects.json`: bilingual project content, contribution scope and visit links.
+- `templates.mjs`: home and project HTML templates.
+- `site-builder.mjs`: produces 26 static HTML pages, image assets, sitemap and Cloudflare configuration.
+- `enhancements.js`: category filtering, accessible image viewing and restrained motion. All content and links are available without JavaScript.
+- `style.css`: responsive editorial design, RTL, keyboard focus and reduced-motion rules.
+- Two CV designs: nursing and design/digital operations, using the original serif layout. The former full-CV URL remains an alias of the design version. Teaching Assistant experience is excluded from both versions.
 
-### GULFRN
+## Build
 
-A personal nursing preparation app with study and question-practice screens. My nursing background informs how the content and learning flow are organised.
+Requires Node.js 22 or later.
 
-**My role:** Product concept, interface design and AI-assisted implementation.
+```sh
+npm install
+npm run build
+```
 
-[View on Google Play](https://play.google.com/store/apps/details?id=com.gulfrn.nursingprep) · [Open web app](https://gulfrn.pages.dev/)
+The deployable directory is `dist/`. For review previews:
 
-### Motaz CV Builder
+```sh
+npm run build:preview
+```
 
-A personal web project with a template-led starting point, structured editing and a live document preview. The interface brings the form and final document into one workflow.
+The preview build adds `noindex` in HTML and response headers, and disallows crawling in `robots.txt`. A production build allows indexing and uses the chosen origin for canonicals and language alternates:
 
-**My role:** Product direction, interface design and AI-assisted implementation.
+```sh
+node site-builder.mjs --origin=https://mohamed-almotaz.pages.dev --out=dist-production
+```
 
-[Open website](https://motazcv.pages.dev/)
+For a bundled runtime, `PORTFOLIO_SHARP_PATH` can point to an installed Sharp module entry point; otherwise the normal project dependency is used.
 
-### MSRA IV
+## Deploy & maintain
 
-The original MSRA IV homepage I designed on Selynk. The portfolio shows this earlier visual design, its identity-led introduction and course-information layout.
+Upload the contents of the generated directory, with `index.html` at the archive root, to Cloudflare Pages. Direct uploads are managed separately from the GitHub repository; committing here does not automatically deploy to Cloudflare.
 
-**My role:** Homepage design, visual content and course administration.
+Retain the last approved deployment for rollback. Review both languages, direct project paths, mobile layout, images, PDF links and category filtering before production. Rebuild after editing content; upload only the generated public directory. Private documents, student records, account credentials and audit reports do not belong in the public bundle.
 
-[Open original website](https://my.selynk.com/msraiv)
+Images are WebP with dimensions and deferred loading below the leading content. Arabic and Latin web fonts are locally hosted WOFF2 subsets; their license is included. There is no analytics tracking or service worker in this portfolio. No domain purchase is required for the `pages.dev` address.
 
-### PLABridge
+## Contribution accuracy
 
-Logo design and visual content for PLABridge, with stacked and horizontal identity versions. My work also includes course content administration and subscriber support.
+The portfolio describes product direction, interface design, development, visual communication and course operations. It makes no claim of independent clinical validation, exam-result improvements or unverified adoption statistics. Development tools are implementation details; responsibilities and outcomes remain evidence based.
 
-**My role:** Logo and visual design; content and subscriber support.
+Personal identity uses the accepted navy and blue MA wordmark and a matching tab icon. Multi-image project galleries support native touch swiping, buttons and arrow keys, with reduced-motion preferences respected. Shift Planner includes recovered social and landscape campaign visuals; their Google Play publication remains separate.
 
-[Visit PLABridge](https://plapbridge.com/)
+## Presentation
 
-### Property rental visuals
+The bilingual home includes a personal introduction, selected work, background, working approach, a separate nursing experience section, two original-layout CVs and contact links. The accepted personal identity is used in the header and favicon. Original screenshots are displayed in CSS device/browser frames; presentation viewports exclude status/gesture bars and scrollbars without altering the original media. The cut-off Shift Planner picker was replaced with a complete source capture. MTI Health uses an isolated identity symbol and a clean viewport of the original module screen.
 
-Rental campaign visuals for Bait Al-Ala and Al-Ghad Al-Mushriq, presented as three selected compositions. Property photography and Arabic lettering lead the layouts.
+## Repository hosting
 
-**My role:** Poster design, photo selection and layout.
+The root `index.html` forwards the previous GitHub Pages address to the current Cloudflare portfolio. The full generated site, including Arabic and project paths, is preserved in `portfolio-production.zip`. Source assets and build files are stored at the repository root. The previous main version is retained in `backup/portfolio-before-2026-10-08`.
 
-
-
-### PinkCare
-
-A university project exploring breast-health awareness through a friendly Arabic interface. The design brings educational guidance, reminders and follow-up into a single experience.
-
-**My role:** Project concept, interface design and AI-assisted implementation.
-
-[Open project](https://pinkcare.lovable.app/)
-
-### Acute GVHD Assessment
-
-A personal healthcare web project with a step-by-step assessment interface and a visible summary panel. It demonstrates how I organise specialist information into a readable digital workflow.
-
-**My role:** Interface design and AI-assisted implementation.
-
-[Open project](https://acutegvhd57357.pages.dev/)
-
-### Al-Taqwa Institute
-
-A logo concept combining Arabic lettering with a pen nib, an architectural arch and an open book. A navy-and-gold palette supports the educational character of the identity.
-
-**My role:** Logo concept and visual composition.
-
-
-
-## Contact
-
-[mohamedmotaz189@gmail.com](mailto:mohamedmotaz189@gmail.com)
-
-## Website source
-
-Bilingual English/Arabic static portfolio with project pages, image viewer and full/nursing/tech CV downloads.
-
-Open `index.html` to preview. To update the gallery, edit `projects.json`, then run `node build.mjs`. Add images alongside the existing files.
-
-### Cloudflare Pages
-
-Build command: `node build.mjs`
-Build output directory: `.`
-Production branch: `main`
-
-Git integration automatically deploys updates to the repository.
+Shift Planner website: https://shift-planner-test.pages.dev/  
+GULFRN website: https://gulfrn.pages.dev/

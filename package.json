@@ -1,0 +1,1 @@
+{"name":"mohamed-almotaz-portfolio","private":true,"version":"2.0.0","type":"module","description":"Bilingual visual design and digital product portfolio","scripts":{"build":"node site-builder.mjs","build:preview":"node site-builder.mjs --preview --out=dist-preview"},"engines":{"node":">=22"},"dependencies":{"sharp":"0.35.5"}}
